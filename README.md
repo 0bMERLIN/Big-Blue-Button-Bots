@@ -1,7 +1,7 @@
 # Big-Blue-Button-Bots
 
 
-## Bots for the bbb/iserv video conference webapp.
+## Bots for the bbb<br>video conference site.
 
 ### usage:
 
