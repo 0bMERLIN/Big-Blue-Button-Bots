@@ -8,6 +8,6 @@ This bot mutes and unmutes the user several times.
 &ndash; Right click the mute button in your video conference and inspect it in the browser.<br>
 &ndash; Find an element that is contained within the button and which has an ID. (The element should be a `button` or a `span`)<br>
 &ndash; Copy its ID. The ID should start with `tippy`.<br>
-&ndash; Replace the <YOUR MUTE ID HERE> with the ID.<br>
+&ndash; Replace the &lt;YOUR MUTE ID HERE&gt; with the ID.<br>
 3. Paste the code into your browsers console in the video conference tab.
 4. call <pre>`myMuteAnnoy()`</pre>
