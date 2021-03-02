@@ -45,10 +45,13 @@ let removeState = (d, cb) => {
 
 let removePopups = () => {
 
-  let boxes =
-    Array.from(document.querySelectorAll('[role="alert"]')).map(el => el.parentElement)  
-  boxes.map(el => Array.from(el.children).filter(e => e.tagName === "I"))
-  .map(x => x[0].click())
+  let boxes = Array.from(document.querySelectorAll('[role="alert"]')).map(el => el.parentElement)  
+  
+  boxes
+    .map(el => Array
+    .from(el.children)
+    .filter(e => e.tagName === "I"))
+    .map(x => x[0].click())
 
   console.clear()
 }
@@ -59,12 +62,10 @@ let annoy = (statSetter, d, n, cb) => {
   }
   else
     statSetter
-      ( d
-      , () => removeState(d, () => annoy(statSetter, d, n - 1, cb))
-      )
+      ( d, () => removeState(d, () => annoy(statSetter, d, n - 1, cb)) )
 }
 
 let annoyNoPopup = (statSetter, d, n) =>
   annoy(statSetter, d, n, removePopups)
 
-annoyNoPopup(clap, 10, 10)
+let myStatusAnnoy = annoyNoPopup(<WHICH SYMBOL>, <DELAY>, <NUMBER OF STATUS SETS>)
