@@ -10,4 +10,7 @@ This bot mutes and unmutes the user several times.
 &ndash; Copy its ID. The ID should start with `tippy`.<br>
 &ndash; Replace the &lt;YOUR MUTE ID HERE&gt; with the ID.<br>
 3. Paste the code into your browsers console in the video conference tab.
-4. call <pre>`myMuteAnnoy()`</pre>
+4. call
+```js
+myMuteAnnoy()
+```
