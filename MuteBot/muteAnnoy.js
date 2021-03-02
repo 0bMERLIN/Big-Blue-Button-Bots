@@ -16,4 +16,4 @@ let muteN = (itemID, i, m) => {
 
 let annoyMute = (itemID, n) => muteN(itemID, 0, n * 2)
 
-let myAnnoyMute = () => annoyMute(<YOUR MUTE ID HERE>, <NUMBER OF MUTES>)
+let myMuteAnnoy = () => annoyMute(<YOUR MUTE ID HERE>, <NUMBER OF MUTES>)
