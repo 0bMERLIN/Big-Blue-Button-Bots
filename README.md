@@ -5,5 +5,7 @@
 
 ### usage:
 
-paste the code for the bot you want into the javascript command prompt.
-usage for the individual bots is described in their folders.
+paste the code for the bot you want<br>
+into the javascript command prompt.<br>
+usage for the  individual  bots  is<br>
+described in their folders.
