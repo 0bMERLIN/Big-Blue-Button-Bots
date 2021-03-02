@@ -2,8 +2,7 @@
 
 This bot mutes and unmutes the user several times.
 
-# usage
-
+### usage
 1. Copy the code into your preferred text editor
 2. Change  in the last line to your specific ID:<br>
 - Right click the mute button in your video conference and inspect it in the browser.
