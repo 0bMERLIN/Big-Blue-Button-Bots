@@ -1,8 +1,15 @@
 let uNameClass = "userName--6aS3s"
 let statSetClass = "item--yl1AH"
 
-let thumbsUp = (d, cb) => setStatsUp(d, "Daumen hoch", cb)
+let away = (d, cb) => setStatsUp(d, "Abwesend", cb)
+let hand = (d, cb) => setStatsUp(d, "Hand heben", cb)
+let undecided = (d, cb) => setStatsUp(d, "Unentschlossen", cb)
+let confused = (d, cb) => setStatsUp(d, "Verwirrt", cb)
+let sad = (d, cb) => setStatsUp(d, "Traurig", cb)
+let happy = (d, cb) => setStatsUp(d, "Glücklich", cb)
 let clap = (d, cb) => setStatsUp(d, "Applaus", cb)
+let thumbsUp = (d, cb) => setStatsUp(d, "Daumen hoch", cb)
+let thumpsDown = (d, cb) => setStatsUp(d, "Daumen runter", cb)
 
 let nullFmap = (potDOM_Elem, f) => {
   if (potDOM_Elem !== undefined && potDOM_Elem !== null)
@@ -67,5 +74,3 @@ let annoy = (statSetter, d, n, cb) => {
 
 let annoyNoPopup = (statSetter, d, n) =>
   annoy(statSetter, d, n, removePopups)
-
-let myStatusAnnoy = annoyNoPopup(<WHICH SYMBOL>, <DELAY>, <NUMBER OF STATUS SETS>)
